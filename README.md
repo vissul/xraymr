@@ -1,33 +1,34 @@
-<div align="center">
-    <a href="https://chronark.com"><h1 align="center">chronark.com</h1></a>
-    
-My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=chronark.com), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
+# Portfolio Starter Kit
 
-</div>
+This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). It allows you to write Markdown and focus on the _content_ of your portfolio. This starter includes:
 
-<br/>
+- Automatically configured to handle Markdown/MDX
+- Generates an RSS feed based on your posts
+- A beautiful theme included out of the box
+- Easily categorize posts with tags
+- Fast, optimized web font loading
 
+## Configuration
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/upstash/clone?demo-title=Next.js%20Portfolio%20with%20Pageview%20Counter&demo-description=Portfolio%20site%20with%20pageview%20counter%2C%20built%20with%20Next.js%2013%20App%20Router%2C%20Contentlayer%2C%20and%20Upstash%20Redis.&demo-url=https%3A%2F%2Fchronark.com%2F&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1DA8n5a6WaP9p1FXf9LmUY%2Fc6264fa2732355787bf657df92dda8a1%2FCleanShot_2023-04-17_at_14.17.37.png&project-name=Next.js%20Portfolio%20with%20Pageview%20Counter&repository-name=nextjs-portfolio-pageview-counter&repository-url=https%3A%2F%2Fgithub.com%2Fchronark%2Fchronark.com&from=templates&integration-ids=oac_V3R1GIpkoJorr6fqyiwdhl17)
+1. Update your name in `theme.config.js` or change the footer.
+1. Update your name and site URL for the RSS feed in `scripts/gen-rss.js`.
+1. Update the meta tags in `pages/_document.js`.
+1. Update the posts inside `pages/posts/*.md` with your own content.
 
-## Running Locally
+## Deploy your own
 
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-```sh-session
-git clone https://github.com/chronark/chronark.com.git
-cd chronark.com
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/nextjs-portfolio-starter&project-name=portfolio&repository-name=portfolio)
+
+## How to use
+
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+
+```bash
+npx create-next-app --example blog my-blog
+# or
+yarn create next-app --example blog my-blog
 ```
 
-
-Create a `.env` file similar to [`.env.example`](https://github.com/chronark/chronark.com/blob/main/.env.example).
-
-Then install dependencies and run the development server:
-```sh-session
-pnpm install
-pnpm dev
-```
-
-
-## Cloning / Forking
-
-Please remove all of my personal information (projects, images, etc.) before deploying your own version of this site.
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
