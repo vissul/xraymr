@@ -1,5 +1,6 @@
 const YEAR = new Date().getFullYear()
-
+import { Analytics } from '@vercel/analytics/react';
+<Analytics />
 export default {
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
